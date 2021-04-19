@@ -21,6 +21,6 @@ class EvenNumberTest extends TestCase
         $this->assertTrue($this->evenNumber->check(4));
         $this->assertFalse($this->evenNumber->check(7));
         $this->assertTrue($this->evenNumber->check(28));
-        $this->assertTrue($this->evenNumber->check(1841));
+        $this->assertFalse($this->evenNumber->check(1841));
     }
 }
